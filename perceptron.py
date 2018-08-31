@@ -36,7 +36,7 @@ class Perceptron:
     def change_weights(self, dw: [float]):
         self.weights = add(self.weights, dw)
 
-    def propagate(self, da : [float]):
+    def propagate(self, da: [float]):
         '''Uses information about the desired changes in a, the
         activation values, to determine how to modify weights and bias.'''
         # Move elsewhere?
