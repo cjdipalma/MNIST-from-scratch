@@ -3,12 +3,15 @@
 from mnist import MNIST
 import random
 
-mndata = MNIST()
-
-images, labels = mndata.load_training()
+mn_data = MNIST('.\\images')
+images, labels = mn_data.load_training()
 
 randindex = random.randrange(0, len(images))
-print(mndata.display(images[randindex]))
-print(labels[randindex])
-##print("mess of raw data")
-##print(images[randindex])
+
+index = 0
+
+print(mn_data.display(images[index]))
+print(labels[index])
+# print(len(images))
+# print("mess of raw data")
+print(images[index])
